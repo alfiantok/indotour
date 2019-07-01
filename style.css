@@ -1,0 +1,1459 @@
+/*
+
+
+--- Universal
+^^^^^^^^^^^^^^
+*/
+@font-face{
+	font-family: "bebas";
+	src:url(font/bebas.ttf);
+}
+@font-face{
+	font-family: "roboto";
+	src:url(font/Roboto-Light.ttf);
+}
+h1{
+	font-family: "bebas";
+	font-size: 30pt;
+	color: #CD141A;
+}
+body{
+	background: #ddd;
+	margin: 0 auto;
+	font-family: "roboto";
+}
+.inline-block{
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+}
+::-webkit-scrollbar{
+	width: 7px;
+}
+::-webkit-scrollbar-track{
+	background: none;
+}
+::-webkit-scrollbar-thumb{
+	background: #850206;
+	border-radius: 30px;
+}
+
+/*
+
+
+--- Universal
+VVVVVVVVVVVVV
+
+*/
+
+/*
+
+
+--- navigation
+AAAAAAAAAAAAA
+
+*/
+
+.btn-nav:hover .line1{
+	width: 37px;
+	transition: all 0.2s;
+}
+.btn-nav:hover .line2{
+	width: 44px;
+	transition: all 0.2s;
+}
+.btn-nav:hover .line3{
+	width: 37px;
+	transition: all 0.2s;
+}
+.line1{
+	content: " ";
+	padding: 3px;
+	width: 40px;
+	background: #ED3237;
+	margin-top: 7px;
+	transition: all 0.2s;
+}
+.line2{
+	content: " ";
+	padding: 3px;
+	width: 30px;
+	background: #ED3237;
+	margin-top: 7px;
+	transition: all 0.2s;
+}
+.line3{
+	content: " ";
+	padding: 3px;
+	width: 40px;
+	background: #ED3237;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	transition: all 0.2s;
+}
+.drp{
+	position: absolute;
+
+	padding: 15px;
+	text-align: center;
+	font-size: 13pt;
+	font-family: arial;
+	font-weight: 700;
+	color: white;
+	cursor: pointer;
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.dark-bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 10;
+}
+.nav{
+	background: fixed;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(skyblue,skyblue,#fff);
+	background-size: cover;
+	z-index: 99980;
+}
+.navInti{
+	
+	
+}
+.intiNav{
+	-webkit-transform:scale(0.5,0.5);
+	display: inline-block;
+	transition: all 0.3s;
+	margin-top: 50px;
+}
+.intiNav a:hover{
+	background: #9D0207;
+	transition: all 0.3s;
+	color: white;
+}
+.intiNav a{
+	transition: all 0.3s;
+	border-radius: 10px;
+	position: relative;
+	padding: 50px;
+	width: 70px;
+	height: 70px;
+	display: block;
+	background: #fff;
+	margin: 4px;
+	font-size: 23pt;
+	color: #222;
+	z-index: 99990;
+}
+.btnNav{
+	position: absolute;
+	top: 3%;
+	right: 8%;
+	z-index: 99999;
+	padding: 5px;
+	border-radius: 10px;
+}
+.posisi{
+	font-size: 13pt;
+	font-weight: 700;
+	color: #222;
+
+}
+#navAll{
+	display: none;
+
+}
+.btnNav{
+	cursor: pointer;
+}
+.closeNav{
+	position: fixed;
+	right: 3%;
+	top: 3%;
+	z-index: 999999;
+}
+.closeNav img:hover{
+	-webkit-transform:rotate(90deg);
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.intiNav{
+	position: relative;
+	
+}
+#active a{
+	background: #ED1B23;
+	color: white;
+}
+.intiNav img{
+	position: absolute;
+	-webkit-transform:translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	margin-bottom: -30px;
+	z-index: 99995;
+	transition: all 0.5s;	
+}
+.intiNav:hover img{
+	-webkit-transform:scale(0.5,0.5);
+	top: -10%;
+	transition: all 0.3s;
+}
+.intiNav span{
+	position: absolute;
+	-webkit-transform:translate(-50%,-50%);
+	top: 60%;
+	left: 50%;
+	opacity: 0;
+	transition: all 0.3s;
+	color: white;
+}
+.intiNav:hover span{
+	top: 50%;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.bird{
+	position: fixed;
+	right: -30%;
+	top: 0%;
+	z-index: 99998;
+	transition: all 10s;
+}
+.ships{
+	position: absolute;
+	bottom: 10%;
+	left: -30%;
+	z-index: 99993;
+	transition: all 10s;
+}
+.sea{
+	position: absolute;
+	z-index: 99992;
+	bottom: 0;
+	width: 100%;
+	padding: 50px;
+	background: linear-gradient(#0093DE,#02689B);
+	background-size: 100% 100%;
+}
+
+
+.backTop{
+	position: fixed;
+	z-index: 991;
+	bottom: 2%;
+	right: 2%;
+
+	cursor: pointer;
+
+}
+/*
+
+
+--- navigation
+VVVVVVVVVVVVV
+
+*/
+/*
+
+--- Header
+^^^^^^^^^^^^^^
+
+*/
+.slider{
+	overflow: hidden;
+	width: 100vh;
+	background: blue;
+	transition: all 0.5s;
+}
+.hidden{
+	width: 100%;overflow: hidden;
+}
+#header{
+	overflow: hidden;
+	background: #ED1B23;
+}
+.hdTop{
+	background: #F9F9F9;
+}	
+.leftHeader{
+	position: absolute;
+	background: url(img/rajaampat.jpg)bottom;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	position: relative;
+}
+.darkBg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 10;
+}
+.nameTour,.cityOfTour{
+	position: relative;
+	color: white;
+	margin-left: 20px;
+	z-index: 20;
+}
+.headCaption hr{
+	background: white;
+	border:none;
+}
+.headCaption{
+	margin-top: 160px;
+}
+.borderLeft{
+	overflow: hidden;
+	margin-left: 50px;
+	border-left: 8px solid #ED1B23;
+	z-index: 20;
+	position: absolute;
+}
+.cityOfTour{
+	margin-top: 10px;
+	font-size: 28px;
+}
+.nameTour{
+	font-size: 85px;
+	border-bottom: 2px solid white;
+	font-family: arial;
+	transition: all 0.5s;
+	position: relative;
+}
+.borderLeft{
+	height: 0;
+}
+.nameTour{
+	left: -100%;
+
+}
+.btnBottom{
+	padding: 20px;
+	border-radius: 30px;
+	background: white;
+	position: absolute;
+	-webkit-transform:translate(-50%,-50%);
+	top: 85%;
+	left: 50%;
+	z-index: 99;
+	cursor: pointer;
+}
+.cityOfTour{
+	left: -100%;
+
+}
+.squareCapt2{
+	transition: all 0.2s;
+}
+.leftHeader{
+	transition: all 0.5s;
+}
+.btnLeftRight{
+	position: absolute;
+	z-index: 99;
+	-webkit-transform: translate(0%,-50%);
+	cursor: pointer;
+	right: 0;
+	top: 50%;
+	background: #ED1B23;
+	padding: 20px 15px 20px 15px;
+	border-radius: 20px 0px 0px 20px;
+}
+.leftHeader:hover .squareCapt2{
+	padding: 13px;
+	transition: all 0.2s;
+}
+.rightHeader{
+	text-align: right;
+	background: #ED1B23;
+	background-size: 60%;
+	color: #fff;
+	width: 40%;
+	height: 100vh;
+}
+.headerRightTwo{
+	margin-top: 200px;
+	margin-right: 20px;
+	font-family: franklin gothic heavy;
+	font-size: 60px;
+	transition: all 0.5s;
+}
+.rightHeader,.leftHeader{
+	float: left;
+	margin: 0;
+}
+.rightHeader{
+	right: 0%;
+}
+.squareCapt2{
+	background: white;
+	border:none;
+	padding: 10px;
+	float: right;
+	margin-right: -100px;
+}
+.squareCapt{
+	background: white;
+	border:none;
+	padding: 10px;
+	float: left;
+	margin-left: 90px;
+}
+.map{
+	position: absolute;
+	z-index: 99;
+	bottom: 10px;
+	margin: 20px;
+}
+.btnNext{
+	position: absolute;
+	z-index: 999;
+	bottom: 100px;
+	-webkit-transform: translate(-50%,-50%);
+	left: 50%;
+}
+.logoWeb a{
+	display: block;
+	position: absolute;
+	z-index: 999;
+	padding: 10px 40px 10px 40px;
+	border-radius: 0px 0px 10px 10px;
+	margin-left: 30px;
+	background: #ED1B23;
+	transition: all 0.1s;
+}
+.logoWeb a:hover{
+	padding-top: 20px;
+	transition: all 0.1s;
+}
+#bulActive{
+	background: #ED1B23;
+}
+.bullet{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 100px;
+	cursor: pointer;
+}
+.ratingCaption{
+	text-align: center;
+	padding-bottom: 5px;
+	color: white;
+	font-family: "roboto";
+}
+.starRating{
+	position: absolute;
+	z-index: 99;
+	-webkit-transform: translate(-50%,-50%);
+	left: 50%;
+	top:10%;
+}
+.borderBtm{
+	background: white;
+	border:none;
+	padding: 1px;
+	float: right;
+	width: 100px;
+	margin-right: 0;
+	transition: all 0.5s;
+}
+.btnProv a{
+	color: #222;
+	font-size: 14pt;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	background: #CE1126;
+	margin: 10px;
+	color: white;
+	display: block;
+	width: 250px;
+	transition: all 0.3s;
+}
+.btnProv a:hover{
+	background: #FB0220;
+	transition: all 0.3s;
+}
+.rightHeader:hover .borderBtm{
+	width: 220px;
+	padding: 1px;
+	transition: all 0.5s;
+}
+.squareCapt{
+	transition: all 0.2s;
+}
+.rightHeader:hover .squareCapt{
+	padding: 12px;
+	transition: all 0.2s;
+}
+.captTwoSmall{
+	margin-top: 10px;
+	margin-right: 20px;
+	font-size: 12pt;
+}
+.btnTelusuri2{
+	position: absolute;
+	
+	right: 0;
+	bottom: 30px;
+	z-index: 99;
+}
+#btnTelusuri3 a{
+	background: none;
+	color: #ED1B23;
+	border-color: #ED1B23;
+	float: left;
+}
+#btnTelusuri3 a:before{
+	content: "Selengkapnya";
+	background: #ED1B23;
+	color: white;
+}
+#btnTelusuri2 a{
+	background: none;
+	width: 200px;
+	display: block;
+}
+#btnTelusuri2 a:before{
+	content: "Selengkapnya";
+	width: 200px;
+}
+
+.btnTelusuri{
+	margin-right: 20px;
+	margin-top: 40px;
+}
+.btnTelusuriFact a{
+	border:3px solid #ED1B23;
+	padding: 10px;
+	font-size: 14pt;
+	color: #ED1B23;
+	font-weight: 600;
+	position: relative;
+	transition: all 0.5s;
+	overflow: hidden;
+}
+.btnTelusuriFact{
+
+}
+.btnTelusuri a{
+	background: #ED1B23;
+	padding: 10px;
+	display: block;
+	width: 130px;
+	text-align: center;
+	float: right;
+	font-size: 14pt;
+	color: #fff;
+	border:3px solid #fff;
+	font-weight: 600;
+	position: relative;
+	transition: all 0.2s;
+	position: relative;
+	overflow: hidden;
+}
+.btnTelusuri a:before{
+	position: absolute;
+	top:0;
+	left: 0;
+	content: "Telusuri";
+	background: #fff;
+	color: #ED1B23;
+	padding: 10px;
+	display: block;
+	width: 130px;
+	text-align: center;
+	left: 100%;
+	transition: all 0.2s;
+}
+.btnTelusuri a:hover:before{
+	transition: all 0.2s;
+	left: 0%;
+}
+
+
+
+/*
+
+
+--- Header
+VVVVVVVVVVVVV
+
+*/
+.headerDest{
+	color: #ED1B23;
+}
+.backFauna{
+	position: relative;
+	z-index: 99;
+}
+.captFauna{
+	background: #eee;
+	padding: 20px;
+	border-radius: 10px;
+}
+.galimg h2{
+	margin: 10px;
+}
+.fakta{
+	width: 100%;
+	background: #eee;
+	border-radius: 0;
+}
+#paket img{
+	width: 100%;
+	height: 300px;
+}
+#paket{
+	width: 40%;
+	height: 500px;
+	transition: all 0.2s;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+#paket:hover{
+	text-decoration: none;
+
+	transition: all 0.2s;
+}
+#wisatas:hover img{
+	transition: all 0.2s;
+	
+}
+#paket:hover img{
+	-webkit-filter:grayscale(0%);
+}
+.harga{
+	color: black;
+	width: 60%;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.seratus{
+	height: 100vh;
+}
+.pictBahari img{
+	margin-top: -200px;
+	transition: all 0.5s;
+}
+.backFauna3{
+	position: absolute;
+	border-radius: 20px;
+	background: url(img/bahari.jpg)left bottom;
+	background-size: cover;
+	z-index: -10;
+	width: 80%;
+	height: 80%;
+	overflow: hidden;
+	margin: 100px;
+}
+.backFauna2{
+	position: absolute;
+	border-radius: 20px;
+	background: url(img/hutan.jpg);
+	background-size: cover;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-filter:blur(8px);
+}
+.ovhidden{
+	height: 100vh;
+	overflow: hidden;
+}
+.captFauna,.pictFauna{
+	transition: all 0.5s;
+	width: 40%;
+	vertical-align: top;
+	margin: 30px 5px 30px 50px;
+}
+.artikelWisata{
+	background: #F9F9F9;
+	padding: 90px 20px 90px 20px;
+}
+
+.mainArtikel{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	
+	margin: 0;
+	transition: all 0.5s;
+}
+.mainArtikel img{
+	height: 250px;
+}
+.tesediaText{
+	margin: 45px;
+}
+.pengantarArt{
+	padding: 20px;
+}
+.mainArtikel:hover{
+	transition: all 0.5s;
+	background: #eee;
+}
+.mainArtikel{
+	height: 480px;
+	vertical-align: top;
+	margin: 15px;
+	text-align: justify;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.mainArtikel2{
+
+	width: 30%;
+	margin: 0;
+	transition: all 0.5s;
+}
+.mainArtikel2 img{
+	height: 250px;
+}
+.pengantarArt{
+	padding: 20px;
+}
+.mainArtikel2{
+	height: 480px;
+	vertical-align: top;
+	margin: 15px;
+	text-align: justify;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 10px 10px 0px 0px;
+}
+.captArtikel{
+	padding: 10px;
+}
+#btnTelusuritel a{
+	background: none;
+	color: #ED3237;
+	border:3px solid #ED3237;
+}
+#btnTelusuritel a:before{
+	content: "Artikel Lainnya";
+	background: #ED3237;
+	color: #fff;
+	
+}
+#btnTelusuriPaket a{
+	background: none;
+	color: #ED3237;
+	border:3px solid #ED3237;
+}
+#btnTelusuriPaket a:before{
+	content: "Paket Lainnya";
+	background: #ED3237;
+	color: #fff;
+}
+#btnTelusurigal a{
+	background: none;
+	color: #ED3237;
+	border:3px solid #ED3237;
+}
+#btnTelusurigal a:before{
+	content: "Foto Lainnya";
+	background: #ED3237;
+	color: #fff;
+}
+.galimg img{
+	width: 33.3%;
+	height: 300px;
+	display: inline-block;
+	float: left;
+}
+.imageGallery{
+	background: #fff;
+	margin:10px;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+	border-radius: 3px;
+}
+.captSourceImage{
+	padding-top: 15px;
+	color: #aaa;
+	width: 320px;
+}
+.gallery{
+	background: #F9F9F9;
+}
+.imgGal{
+	position: relative;
+}
+
+.imgGal img{
+	-webkit-filter:grayscale(60%);
+	transition: all 0.5s;
+}
+.imgGal img:hover{
+	-webkit-filter:grayscale(0%);
+	transition: all 0.5s;
+}
+.location-web{
+	padding: 20px;
+	background: #E4E3E3;
+	font-size: 13pt;
+	box-shadow: 0px 0px 2px black;
+	text-align: right;
+	padding-right: 100px;
+}
+.next-bc{
+	font-weight: bold;
+	font-family: arial;
+	background: url(img/arrow.svg)center no-repeat;
+	padding: 20px;
+	background-size: 100%;
+}
+.location-web a{
+	color: #ED1B23;
+}
+.location-web a:hover{
+	text-decoration: underline;
+}
+.close,.close2,.close3,.close4,.close5{
+	background: url(img/arrow.svg)center no-repeat;
+	background-size: 100%;
+	-webkit-transform:rotate(-90deg);
+	padding: 30px;
+	width: 0%;
+	color: white;
+	font-size: 14pt;
+	margin: 10px;
+	border-radius: 100px;
+	border: 3px solid #ED3237;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.close:hover,.close2:hover,.close3:hover,.close4:hover,.close5:hover{
+	background-size: 100% 70%;
+	border: 3px solid #ED3237;
+	color: #ED3237;
+	transition: all 0.5s;
+}
+.more{
+	background: url(img/arrow.svg)center no-repeat;
+	background-size: 100%;
+	-webkit-transform:rotate(90deg);
+	padding: 30px;
+	width: 0%;
+	color: white;
+	font-size: 14pt;
+	margin: 10px;
+	border-radius: 100px;
+	border: 3px solid #ED3237;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.more:hover{
+	background-size: 100% 70%;
+	border: 3px solid #ED3237;
+	color: #ED3237;
+	transition: all 0.2s;
+}
+.logo div{
+	display: inline-block;
+	width: 20%;
+	padding: 10px;
+}
+.footer-box{
+	vertical-align: top;
+	width: 310px;
+	padding-bottom: 35px;
+}
+.footer-box p{
+	padding: 15px;
+	text-align: justify;
+}
+.footer{
+	background: #222;
+	color: white;
+}
+.batas-footer{
+	padding: 8px;
+	background: #d4d4d4;
+	color: black;
+}
+.navigation2 a{ 
+	display: block;
+	width: 70%;
+	padding: 10px;
+	text-align: left;
+	background: none;
+	font-size: 13pt;
+	color: white;
+}
+
+.navigation2 a:hover{
+	background: #ED1B23;
+}
+.locationDestPulau{
+	position: relative;
+}
+.pinLoc{
+	position: absolute;
+}
+.sumateraLoc{
+	top: 12%;
+	left: 18%;
+}
+.jawaLoc{
+	bottom: 20%;
+	left: 35%;
+}
+.nusaTenggaraLoc{
+	bottom: 15%;
+	left: 46%;
+}
+.kalimantanLoc{
+	top: 18%;
+	left: 40%;
+}
+.sulawesiLoc{
+	top: 30%;
+	left: 52%;
+}
+.malukuLoc{
+	right: 30%;
+	top: 18%;
+}
+.papuaLoc{
+	right: 16%;
+	top: 44%;
+}
+.planeBody{
+	
+}
+.planeBody{
+	transition: all 0.5s;
+	position: fixed;
+	z-index: 991;
+	top: -300%;
+	left: -300%;
+	right: 0%;
+	cursor: pointer;
+}
+.headPengantarLoc{
+	background: #800000;
+	padding: 20px;
+	color: white;
+}
+.paketTersedia{
+	width: 23%;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	cursor: pointer;
+}
+.paketTersedia:hover{
+	opacity: 0.7;
+}
+.paketTersedia:nth-child(1){
+	background: #FF9800;
+}
+.paketTersedia:nth-child(2){
+	background: #8BC34A;
+}
+.paketTersedia:nth-child(3){
+	background: #00BCD4;
+}
+.paketTersedia:nth-child(4){
+	background: #3E2A4B;
+}
+.boxInfo{
+	margin-top: 50px;
+	background: #FF9800;
+	width: 100%;
+
+}
+.wisataBox a{
+	color: #222;
+}
+.wisataBox{
+	width: 310px;
+	height: 430px;
+	background: #fff;
+	overflow: hidden;
+	margin: 20px 5px 20px 5px;
+	transition: all 0.5s;
+	border-radius: 5px; 	
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.wisataBox:hover{
+	background: #ddd;
+}
+.backWisata{
+	width: 100%;
+	height: 200px;
+	padding: 20px;
+}
+.tempatWisata{
+	background: red;
+}
+.form-search input[type="text"]{
+	padding: 14px;
+	font: bold 18px Arial;
+	border:none;
+	background: #eee;
+	border-radius: 15px 0px 0px 15px;
+	width: 500px;
+	font-size: 14pt;
+	 transition: all 0.5s;
+}
+.form-search{
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-bottom: 100px;
+}
+.form-search input[type="text"]:focus{
+	outline: none;
+	transition: all 0.5s;
+}
+.form-search button{
+	margin: 0;
+	padding: 14px;
+	color: white;
+	font-size: 14pt;
+	background: #ED1B23;
+	border-radius: 0px 15px 15px 0px;
+	border: none;
+}
+.page{
+	margin-top: 60px;
+}
+.pages a{
+	padding: 20px;
+	display: block;
+	background: #ED3237;
+	font-size: 14pt;
+	color: white;
+	font-weight: 600;
+	margin: 10px;
+	border-radius: 5px;
+	transition: all 0.5s;
+}
+.ceritaMenarik{
+	border:1px solid #aaa;
+	padding: 30px;
+}
+.ceritaMenarik b{
+	font-size: 13pt;
+}
+.scrollDown{
+	position: absolute;
+	-webkit-transform:translate(-50%,-50%);
+	top: 85%;
+	left: 50%;
+	z-index: 99;
+}
+#scrDwn{
+	background: url(img/arrow.png)center no-repeat;
+	background-size: 70%;
+	transition: all 0.2s;
+}
+#scrDwn:hover{
+	background-size: 60%;
+	transition: all 0.2s;
+}
+.rute{
+	padding: 20px 20px 20px 20px;
+}
+.detilData p {
+	text-align: justify;
+}
+#pagesactive a{
+	background: #830C10;
+}
+.pages a:hover{
+	background: #830C10;
+	transition: all 0.5s;
+}
+.contDetail .padd{
+	margin: 10px;
+}
+.contDetail{
+	background: #F7F7F7;
+	border:1px solid #aaa;
+	margin: 30px;
+	padding: 10px;
+	font-size: 14pt;
+	
+}
+.detilData{
+	margin: 30px;
+}
+.artsatu{
+	vertical-align: top;
+}
+.artikelSmall:before,.artikelBig:before{
+	content: " ";
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.9));
+	position: absolute;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.2s;
+}
+.textArtikel{
+	transition: all 0.2s;
+}
+.artikelSmall:hover .textArtikel{
+	transition: all 0.2s;
+	
+}
+.artikelBig .textArtikel{
+	font-size: 30pt;
+}
+.artikelData p{
+	text-indent: 20px;
+}
+.datasArt{
+	margin-bottom: 10px;
+}
+.avatar,.kolomKomentar{
+	vertical-align: top;
+}
+.dataPost{
+	background: #eee;
+	padding: 30px;
+}
+.komentar{
+	background: white;
+}
+.textArtikel{
+	position: absolute;
+	bottom: 0;
+	color: white;
+	font-size: 15pt;
+	padding: 10px;
+	font-family: arial;
+}
+.artikelBig{
+	position: relative;
+	background: url(img/dest/jayapura.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+	width: 55%;
+	height: 500px;
+}
+.artikelSmall{
+	position: relative;
+	background-size: 100% 100%;
+	transition: all 0.2s;
+	width: 400px;
+	height: 250px;
+}
+.artikelSmall:hover,.artikelBig:hover{
+	transition: all 0.2s;
+	background-size: 120% 120%;
+}
+.artikelSmall1{
+	background: url(img/dest/denpasar.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+}
+.artikelSmall2{
+	background: url(img/dest/samarinda.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+}
+.artikelSmall3{
+	background: url(img/dest/sofifi.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+}
+.artikelSmall4{
+	background: url(img/dest/jambi.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+}
+.artikelSmall5{
+	background: url(img/dest/jakarta.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+}
+.artikelSmall6{
+	background: url(img/dest/gorontalo.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+}
+.artikelSmall7{
+	background: url(img/dest/aceh.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+}
+.captFauna:nth-child(1){
+	float: left;box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+}
+.artikelSmall8{
+	background: url(img/dest/banten.jpg);
+	background-size: 100% 100%;
+	transition: all 0.2s;
+}
+.backFauna2:nth-child(1){
+	border:none;right: 0;width: 75%;height: 77%;
+	
+}
+.pinLoc img{
+	width: 50px;
+}
+.artikelSmall01{
+	background: url(img/dest/banten.jpg);
+	background-size: 100% 100%;
+}
+.artikelSmall0x{
+	background: url(img/dest/padang2.jpg)bottom;
+	background-size: 140% 140%;
+	width: 58.8vw;
+}
+.artikelSmall02{
+	background: url(img/dest/bengkulu.jpg);
+	background-size: 100% 100%;
+}
+.artikelSmall09{
+	background: url(img/dest/ambon.jpg);
+	background-size: 100% 100%;
+}
+.artikelSmall10{
+	background: url(img/dest/riau.jpg);
+	background-size: 100% 100%;
+}
+.artikelSmall11{
+	background: url(img/dest/medan.jpg);
+	background-size: 100% 100%;
+}
+.artikelSmall0xx{
+	background: url(img/dest/surabaya2.jpg);
+	background-size: 130% 130%;
+	width: 58.8vw;
+}
+.galeriJakarta{
+	background: url(img/dest/jakarta2.jpg);
+	background-size: 130% 130%;
+	width: 58.8vw;
+}
+.artikelSmall03{
+	background: url(img/dest/yogyakarta.jpg);
+	background-size: 100% 100%;
+}
+.poster1{
+	background: url(img/poster/poster1.png);
+	background-size: 100% 100%;
+	height: 500px;
+}
+.poster2{
+	background: url(img/poster/poster2.png);
+	background-size: 100% 100%;
+	height: 500px;
+}
+.poster3{
+	background: url(img/poster/poster3.png);
+	background-size: 100% 100%;
+	height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RES*/
+@media(max-width: 1330px){
+	.artikelSmall{
+		width: 320px;
+	}
+}
+@media(max-width: 1026px){
+	.artikelSmall{
+		width: 450px;
+	}
+	.drp{
+		right: 4%;
+	}
+	
+}
+@media(max-width: 1053px){
+	.backTop{
+		right: 4%;
+	}
+	#pendukung{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.nav{
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+	.navInti{
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+	}
+	.navInti center{
+		width: 100%;
+		height: 100vh;
+	}
+	#paket img{
+		height: 350px;
+	}
+	#paket{
+		width: 90%;
+		height: 100%;
+	}
+	.pinLoc img{
+		width: 30px;
+	}
+	h1{
+		font-size: 18pt;
+	}
+	.nameTour{
+		font-size: 35pt;
+	}
+	.cityOfTour{
+		font-size: 14pt;
+		width: 250px;
+	}
+	.artikelSmall{
+		width: 80vw;
+	}
+	.form-search input[type="text"]{
+		width: 80%;
+		border-radius: 0;
+		margin: 0;
+		padding-right: 0;
+	}
+	.form-search button{
+		width: 80%;
+		border-radius: 0;
+		margin: 0;
+		padding-right: 0;
+	}
+	.artikelBig{
+		display: none;
+	}
+	.sea,.ships,.bird{
+		display: none;
+	}
+	.navInti{
+		overflow: scroll;
+	}
+}
+@media(max-width: 506px){
+	#active{
+		color: #fff;
+	}
+	.intiNav a{
+		width: 300px;
+		height: 40px;
+		padding: 20px;
+		margin-bottom: 10px;
+		overflow: hidden;
+		box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	}
+	.intiNav:hover img{
+			-webkit-transform:scale(1,1);
+			top: 0%;
+			left: 0%;
+			transition: all 0.3s;
+			background: #eee;
+			padding: 5px;
+			border-radius: 10px;
+		}
+		.intiNav:hover span{
+			top: 50%;
+			left: 50%;
+			color: #fff;
+
+			opacity: 1;
+			transition: all 0.3s;
+		}
+	.intiNav span{
+		opacity: 1;
+		width: 100%;
+		color:#222;
+		top: 50%;
+		font-size: 15pt;
+		text-align: left;
+		margin-left: 130px;
+	}
+	.intiNav a img{
+		width: 70px;
+		left: 12%;
+		background: #eaeaea;
+		padding: 5px;
+		border-radius: 10px;
+	}
+	.logoWeb a{
+		width: 100%;
+		margin: 0;
+		height: 10vh;
+	}
+	.borderLeft{
+		margin-top: 20px;
+	}
+	.captFauna:nth-child(1){
+		border-radius:0;
+		box-shadow: none;
+		width: 90%;
+		margin: 0px;
+	}
+	.backFauna2:nth-child(1){
+		
+	}
+	.location-web{
+		text-align: left;
+		padding:20px;
+	}
+}
+@media(max-width: 499px){
+	#paket img{
+		height: 200px;
+	}
+}
+@media(max-width: 1032px){
+	.pictBaharitext{
+		margin: 0;
+		border-radius: 0;
+		width: 100%;
+	}
+	.seratus{
+		height: 100%;
+	}
+	.pictBahariImg img{
+		display: none;
+	}
+	.orangutan{
+		display: none;
+	}
+}	

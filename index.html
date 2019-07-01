@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indonesia Tourism - One Thousand Paradise of Nusantara</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="file/jquery-3.3.1.min.js"></script>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+</head>
+<body>
+	<div class="btnNav">
+			<div class="navigation3">
+					<div class="btn-nav drp" style="background: white;">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+				</div>
+	</div>
+	<div class="nav" id="navAll">
+		<div class="closeNav">
+			<img src="img/close.png" width="70px">
+		</div>
+
+		<div class="navInti">
+			<center>
+				<div class="intiNav nav1" id="active">
+					
+					<a href="index.html	"><img src="img/nav1.png" width="100px"><span>BERANDA</span></a>
+				</div>
+				<div class="intiNav nav2">
+					
+					<a href="destinasi.html"><img src="img/nav2.png" width="100px"><span>DESTINASI</span></a>
+				</div>
+				<div class="intiNav nav3" >
+					
+					<a href="artikel.html"><img src="img/nav3.png" width="100px"><span>ARTIKEL</span></a>
+				</div>
+				<div class="intiNav nav4" >
+					
+					<a href="paketwisata.html"><img src="img/nav4.png" width="100px"><span>PAKET WISATA</span></a>
+				</div>
+				<div class="intiNav nav3" >
+					
+					<a href="galeri.html"><img src="img/nav5.png" width="100px"><span>GALERI</span></a>
+				</div>
+				
+			</center>
+		</div>
+		<div class="bird">
+			<img src="img/bird.gif" width="400px">
+		</div>
+		<div class="animationShip">
+			<div class="ships">
+				<img src="img/ship.png" width="100px">
+			</div>
+			<div class="sea">
+				
+			</div>
+		</div>
+
+
+	</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				
+			});
+		</script>
+		<script type="text/javascript">
+			$(".closeNav").click(function(){
+				$("#navAll").slideUp();
+				$(".ships").css({"left":"-40%"});
+				$(".bird").css({"right":"-130%"});
+				$(".btnNav").fadeIn(300);
+				$(".intiNav:nth-child(1)").css({"-webkit-transform":"scale(0.5,0.5)"});
+				$(".intiNav:nth-child(2)").css({"-webkit-transform":"scale(0.5,0.5)"});
+				$(".intiNav:nth-child(3)").css({"-webkit-transform":"scale(0.5,0.5)"});
+				$(".intiNav:nth-child(4)").css({"-webkit-transform":"scale(0.5,0.5)"});
+				$(".intiNav:nth-child(5)").css({"-webkit-transform":"scale(0.5,0.5)"});
+			}); 
+			$(".btnNav").click(function(){
+				$("#navAll").slideDown();
+				$(".ships").animate({"left":"40%"});
+				$(".bird").animate({"right":"130%"});
+				$(".btnNav").hide();
+
+				$(".intiNav:nth-child(1)").css({"-webkit-transform":"scale(1,1)"});
+				$(".intiNav:nth-child(2)").css({"-webkit-transform":"scale(1,1)"});
+				$(".intiNav:nth-child(3)").css({"-webkit-transform":"scale(1,1)"});
+				$(".intiNav:nth-child(4)").css({"-webkit-transform":"scale(1,1)"});
+				$(".intiNav:nth-child(5)").css({"-webkit-transform":"scale(1,1)"});
+
+			});
+		</script>
+	<div class="slider">
+		<div id="header" class="destOne"  style="position: absolute;top: 0;left: 0%;width: 100%;">
+		<div class="leftHeader inline-block" style="z-index: 999;">
+			<div class="logoWeb">
+				<a href="index.html">
+					<img src="img/logo.png" width="200px">
+				</a>
+			</div>
+			<div class="headCaption">
+				<div class="darkBg"></div>
+				<div class="borderLeft">
+				
+					<div class="nameTour">
+						INDOTOUR
+					</div>
+					<div class="cityOfTour">
+						Informasi terlengkap tentang wisata di Indonesia
+					</div>
+					
+
+				</div>
+			</div>
+						<div class="more open scrollDown" id="scrDwn">
+							
+						</div>		
+		</div>	
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".borderLeft").delay(200).animate({"height":"150px"},"slow");
+				$(".nameTour").delay(800).animate({"left":"0px"},"slow");
+				$(".cityOfTour").delay(2200).animate({"left":"0px"},"slow");
+				
+			});
+		</script>	
+	</div>
+	
+
+
+
+
+	</div>
+
+
+
+	<div style="clear: both;height: 100vh;"></div>
+
+			<script type="text/javascript">
+			$(".left").click(function(){
+				$(".leftHeader").css({"width":"60%"});
+				$(".rights").show();
+				$(".left").hide();
+				$(".rightHeader").animate({"margin-right":"0%"},"slow");
+				$("#fix").css({"position":"absolute"});
+			});
+			$(".rights").click(function(){
+				$(".leftHeader").css({"width":"100%"});
+				$(".rights").hide();
+				$(".left").show();
+				$(".rightHeader").animate({"margin-right":"-100%"},"slow");
+				$("#fix").css({"position":"fixed"});
+			});
+
+			$(".one").click(function(){
+				$(".destOne").animate({"left":"0%"},"slow");
+				$(".destTwo").animate({"left":"-100%"},"slow");
+				$(".destThree").animate({"left":"-100%"},"slow");
+				$(".destFour").animate({"left":"-100%"},"slow");
+
+
+				$(".one").css({"background":"#ED1B23"});
+				$(".two").css({"background":"white"});
+				$(".three").css({"background":"white"});
+				$(".four").css({"background":"white"});
+			});
+			$(".two").click(function(){
+				$(".destOne").animate({"left":"-100%"},"slow");
+				$(".destTwo").animate({"left":"0%"},"slow");
+				$(".destThree").animate({"left":"-100%"},"slow");
+				$(".destFour").animate({"left":"-100%"},"slow");
+
+				$(".one").css({"background":"white"});
+				$(".two").css({"background":"#ED1B23"});
+				$(".three").css({"background":"white"});
+				$(".four").css({"background":"white"});
+			});
+			$(".three").click(function(){
+				$(".destOne").animate({"left":"-100%"},"slow");
+				$(".destTwo").animate({"left":"-100%"},"slow");
+				$(".destThree").animate({"left":"-0%"},"slow");
+				$(".destFour").animate({"left":"-100%"},"slow");
+
+				$(".one").css({"background":"white"});
+				$(".two").css({"background":"white"});
+				$(".three").css({"background":"#ED1B23"});
+				$(".four").css({"background":"white"});
+			});
+			$(".four").click(function(){
+				$(".destOne").animate({"left":"-100%"},"slow");
+				$(".destTwo").animate({"left":"-100%"},"slow");
+				$(".destThree").animate({"left":"-100%"},"slow");
+				$(".destFour").animate({"left":"0%"},"slow");
+
+				$(".one").css({"background":"white"});
+				$(".two").css({"background":"white"});
+				$(".three").css({"background":"white"});
+				$(".four").css({"background":"#ED1B23"});
+			});
+			</script>
+			
+			<script type="text/javascript">
+				$("#scrDwn").click(function() {
+					var path = $("#telusuri").offset().top;
+				 	 $("html").animate({ scrollTop: path }, 1000);
+				});
+			</script>
+			<div class="location-web">
+				
+			</div>
+			<img src="img/shadow-4.png" style="width: 100%;">
+			
+
+
+
+			
+			<div class="ovhidden">
+				<div id="telusuri"></div>
+				<div class="backBudaya" style="height: 100vh;padding-top: 70px;">
+					
+					
+
+					<div class="captFauna inline-block">
+						<h1 style="font-weight: 3000">Telusuri Wisata di Indonesia</h1>
+						<p>
+							Indonesia memiliki banyak destinasi yang sangat seru untuk ditelusuri. Mulai dari Sabang sampai Merauke.
+						</p>
+						<div class="btnTelusuri btnTelusuri3" id="btnTelusuri3">
+							<a href="destinasi.html">Selengkapnya</a>
+						</div>
+					</div>
+
+					<div class="backFauna2" style="height: 100vh;background: url(img/rajaampat.jpg)bottom;-webkit-filter:blur(0px);background-size:cover;background-attachment: fixed;border-radius: 0;">
+						<div class="inline-block imgBudaya budayaSld">
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="artikelWisata">
+				
+					<center><h1>Artikel</h1></center>
+				
+				<center>
+					<div class="inline-block artsatu">
+						<a href="">
+							<div class="artikelSmall artikelSmall3">
+								<div class="textArtikel">Keindahan pulau Maitra dan Tidore</div>
+							</div>
+						</a>
+					</div>
+					<div class="inline-block artsatu">
+						<a href="">
+							<div class="artikelSmall artikelSmall4">
+								<div class="textArtikel">Peresmian Jembatan Gentala Arasy</div>
+							</div>
+						</a>
+					</div>
+					<div class="inline-block artsatu">
+						<a href="">
+							<div class="artikelSmall artikelSmall5">
+								<div class="textArtikel">Sejarah kota Jakarta</div>
+							</div>
+						</a>
+					</div>
+
+				</center>
+
+
+				<div class="btnTelusuri btnTelusuritel btnTelusuritel" id="btnTelusuritel">
+					<a href="artikel.html" style="margin-right: 40px;">Artikel Lainnya</a>
+				</div>
+
+				<br><BR><BR>
+			</div>
+			<div class="ovhidden seratus">
+				<div class="backFauna">
+					
+					<div class="backFauna3"></div>
+					
+					<div class="pictFauna pictBahari pictBahariImg inline-block">
+						<img src="img/2.png">
+					</div>
+					<div class="captFauna pictBahari pictBaharitext inline-block" style="box-shadow: 0px 0px 10px rgba(0,0,0,0.6);">
+						<h1>Telusuri surga di bawah air</h1>
+						<p>
+							Dengan ekosistem terumbu karang yang kaya dan juga beragam jenis spesies dan biota lautnya, destinasi bahari Indonesia telah menjadi salah satu destinasi wisata dunia
+						</p>
+						<div class="btnTelusuri btnTelusuri3" id="btnTelusuri3">
+							<a href="destinasi.html">Selengkapnya</a>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$("html").ready(function(){
+				$(window).scroll(function(){
+						if($("html").scrollTop() == 0){
+							$(".pictBahari img").css({"margin-top":"-200px"});
+							$(".faunaSld img").css({"margin-right":"-100px"});
+							$(".budayaSld img").animate({"margin-left":"-100px"});
+						}
+						if($("html").scrollTop() >= 1960){
+							$(".pictBahari img").css({"margin-top":"-50px"});
+						}
+						if($("html").scrollTop() >= 1300){
+							
+						}
+						if($("html").scrollTop() >= 1600){
+							$(".imgBudaya img").animate({"margin-left":"0px"});
+						}		
+					});
+				});
+
+			</script>
+			<br><br>
+
+			<div class="gallery">
+				<div class="" style="text-align: left;background: #F9F9F9;width: 100%;margin: 0;padding: 0px 0px 20px 0px;"><BR><BR><BR>
+					<center><h1>Galeri</h1></center>
+				</div>
+				<center>
+					<div class="inline-block artsatu">
+						<a href="">
+							<div class="artikelSmall artikelSmall01">
+								<div class="textArtikel">Jembatan Ujung Pantai</div>
+							</div>
+						</a>
+					</div>
+					<div class="inline-block artsatu">
+						<a href="">
+							<div class="artikelSmall artikelSmall02">
+								<div class="textArtikel">Rumah Gadang</div>
+							</div>
+						</a>
+					</div>
+					<div class="inline-block artsatu">
+						<a href="">
+							<div class="artikelSmall artikelSmall03">
+								<div class="textArtikel">kota Yogyakarta</div>
+							</div>
+						</a>
+					</div>
+
+				</center>
+				<div style="clear: both;"></div>
+				<div class="btnTelusuri btnTelusuritel btnTelusuritel" id="btnTelusurigal" style="margin-right: 130px;">
+					<a href="galeri.html">Foto Lainnya</a>
+				</div>
+				<br><br><BR><BR><BR>
+			</div>
+			<div class="ovhidden">
+				<div class="backBudaya" style="height: 100vh;padding-top: 70px;">
+					
+					
+
+					<div class="captFauna inline-block" style="float: left;box-shadow: 0px 0px 10px rgba(0,0,0,0.6)">
+						<h1>Ragam fauna Indonesia</h1>
+						<p>
+							Area ekologi Indonesia bagian barat yang banyak berasal dari fauna Asia dan daerah timur Indonesia yang banyak berasal dari spesies Australasia telah membuat fauna di Indonesia memiliki tingkat deversivitas yang tinggi dan juga keindahan alam dari kepulauan tropis.
+						</p>
+						<div class="btnTelusuri btnTelusuri3" id="btnTelusuri3">
+							<a href="#">Selengkapnya</a>
+						</div>
+					</div>
+
+					<div class="backFauna2" style="border:none;right: 0;width: 75%;height: 77%;-webkit-filter:blur(0px);border-radius: 10px 0px 0px 10px;background: url(img/hutan.jpg)left;background-size:cover;">
+						<div class="inline-block imgBudaya budayaSld orangutan">
+							<img src="img/1.png" style="position: absolute;right: 0;">
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+			<div style="clear: both;"></div>
+			<div class="artikelWisata" id="wisatas" style="background: #aaa;">
+				
+					<center><h1>Paket Wisata</h1></center>
+				
+				<center>
+				<div class="mainArtikel inline-block pktLiburan" id="paket">
+					<a href="#" style="color: black;">
+						<div class="">
+							<img src="img/dest/denpasar.jpg">
+						</div>
+						<div class="pengantarArt">
+							<h2>Bali</h2>
+							Bali adalah salah satu daerah di Indonesia
+						</div>
+						<center><div class="harga"><h2>Rp 2.999.000 ,-</h2></div></center>
+						<br>
+					</a>
+				</div>
+				<div class="mainArtikel inline-block pktLiburan" id="paket">
+					<a href="#" style="color: black;">
+						<div class="">
+							<img src="img/dest/manado.jpg" width="100%">
+						</div>
+						<div class="pengantarArt">
+							<h2>Bunaken</h2>
+							Pantai Kuta adalah salah satu wisata di Indonesia
+						</div>
+						<center><div class="harga"><h2>Rp 3.299.000 ,-</h2></div></center>
+						<br>
+					</a>
+				</div>
+				
+				<div class="btnTelusuri btnTelusuritel btnTelusuritel" id="btnTelusuriPaket" style="margin-right: 50px;">
+					<a href="#">Paket Lainnya</a>
+				</div>
+				<br><BR><br>
+				<div class="loveIndo">
+				
+			</div>
+
+			</center>
+		</div>
+
+
+				<div class="backTop" style="display: none;">
+					<img src="img/top.png" width="80px" style="-webkit-transform:rotate(-45deg)">
+				</div>
+		<script type="text/javascript">
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() >= 50){
+						$(".backTop").fadeIn();
+					}
+					else{
+						$(".backTop").fadeOut();
+					
+						$(".backTop").css({"bottom":"2%"});
+					}
+				
+			});
+			$(".backTop").click(function(){	
+					$(".backTop").css({"background":"none"});
+					$(".backTop").animate({"bottom":"100%"}, "slow");
+					 $('html').animate({scrollTop : 0}, "slow");
+				});
+		</script>
+
+			<div class="fakta captFauna" style="width: 100%;margin: 0;padding: 10px 0px 10px 0px;">
+					<center>
+						<p  style="font-size: 16pt;">
+							"Indonesia memiliki ekosistem alami yang terawat dengan baik dengan hutan hujan seluas 57% dari luas daerah Indonesia. Indonesia juga memiliki garis pantai terpanjang di dunia berkisar 54, 716 kilometer."
+						</p>
+					</center>
+				</div>
+
+				
+
+		<div class="footer">
+		<div style="background: #222;">
+			<center>
+			<div class="footer-box inline-block logo">
+				<h2>Dipersembahkan oleh</h2>
+				<img src="img/logo.png" width="170px">
+			</div>
+			<div class="footer-box inline-block">
+				<h2>Destinasi Populer</h2>
+					<div class="navigation2">
+						<a href="#" id="active2">Pantai Kuta - Bali</a>
+						<a href="#">Borobudur - Jawa Tengah</a>	
+						<a href="#">Raja Ampat - Papua</a>
+						<a href="#">Bunaken - Manado</a>
+						<a href="#">Malioboro - Yogyakarta</a>
+						<a href="#">Taman Safari - Jakarta</a>
+						<div class="clear-both"></div>
+					</div>	
+			</div>
+			<div class="footer-box inline-block">
+				<h2>Kontak Kami</h2>
+					<div class="navigation2">
+						<a href="#" style="background: #3b5999; width: 30%;text-align:center;margin:10px;display: inline-block;">Facebook</a>
+						<a href="#" style="background: #e4405f; width: 30%;text-align:center;margin:10px;display: inline-block;">Instagram</a>	
+						<a href="#" style="background: #cd201f; width: 30%;text-align:center;margin:10px;display: inline-block;">Youtube</a>
+						<a href="#" style="background: #55acee; width: 30%;text-align:center;margin:10px;display: inline-block;">Tweeter</a>
+						<a href="#" style="background: #25D366; width: 30%;text-align:center;margin:10px;display: inline-block;">Whats App</a>
+						<a href="#" style="background: #00c300; width: 30%;text-align:center;margin:10px;display: inline-block;">Line</a>
+						<div class="clear-both"></div>
+					</div>	
+				</div>
+				<div class="footer-box inline-block">
+				<h2>Temukan Kami</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1152418093893!2d110.36383881422094!3d-7.77760367931727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58378e231e21%3A0x34bffdcc5d618a71!2sSMK+Negeri+3+Yogyakarta!5e0!3m2!1sid!2sid!4v1518233891601" width="80%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div style="padding: 10px;">
+					Jl. R.W. Monginsidi No.2A, Jetis, Kota Yogyakarta
+				</div>
+			</div>
+			<div class="clear-both"></div>
+			<div class="batas-footer">
+				
+					Copyright &copy; 2018 All-rights reserved. Credit :  <a href="sumber.html" style="color: red;">click here</a>. Design dan Develop By Alfian - SKAGATA TEAM - SMK N 3 YOGYAKARTA
+				</center>	
+			</div>
+		</div>
+	</div>
+
+		
+</body>
+</html>

@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destinasi - Indonesia Tourism</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="file/jquery-3.3.1.min.js"></script>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+</head>
+<body style="background: #fff;">
+	<div class="btnNav">
+			<div class="navigation3">
+					<div class="btn-nav drp" style="background: white;">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+				</div>
+	</div>
+	<div class="nav" id="navAll">
+		<div class="closeNav">
+			<img src="img/close.png" width="70px">
+		</div>
+
+		<div class="navInti">
+			<center>
+				<div class="intiNav nav1">
+					
+					<a href="index.html	"><img src="img/nav1.png" width="100px"><span>BERANDA</span></a>
+				</div>
+				<div class="intiNav nav2" id="active">
+					
+					<a href="destinasi.html"><img src="img/nav2.png" width="100px"><span>DESTINASI</span></a>
+				</div>
+				<div class="intiNav nav3" >
+					
+					<a href="artikel.html"><img src="img/nav3.png" width="100px"><span>ARTIKEL</span></a>
+				</div>
+				<div class="intiNav nav4">
+					
+					<a href="paketwisata.html"><img src="img/nav4.png" width="100px"><span>PAKET WISATA</span></a>
+				</div>
+				<div class="intiNav nav3" >
+					
+					<a href="galeri.html" id="active"><img src="img/nav5.png" width="100px"><span>GALERI</span></a>
+				</div>
+			</center>
+		</div>
+		<div class="bird">
+			<img src="img/bird.gif" width="400px">
+		</div>
+		<div class="animationShip">
+			<div class="ships">
+				<img src="img/ship.png" width="100px">
+			</div>
+			<div class="sea">
+				
+			</div>
+		</div>
+
+
+	</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				
+			});
+		</script>
+		<script type="text/javascript">
+			$(".closeNav").click(function(){
+				$("#navAll").slideUp();
+				$(".ships").css({"left":"-40%"});
+				$(".bird").css({"right":"-130%"});
+				$(".btnNav").fadeIn(300);
+				$(".intiNav:nth-child(1)").css({"-webkit-transform":"scale(0.5,0.5)"});
+				$(".intiNav:nth-child(2)").css({"-webkit-transform":"scale(0.5,0.5)"});
+				$(".intiNav:nth-child(3)").css({"-webkit-transform":"scale(0.5,0.5)"});
+				$(".intiNav:nth-child(4)").css({"-webkit-transform":"scale(0.5,0.5)"});
+				$(".intiNav:nth-child(5)").css({"-webkit-transform":"scale(0.5,0.5)"});
+			}); 
+			$(".btnNav").click(function(){
+				$("#navAll").slideDown();
+				$(".ships").animate({"left":"40%"});
+				$(".bird").animate({"right":"130%"});
+				$(".btnNav").hide();
+
+				$(".intiNav:nth-child(1)").css({"-webkit-transform":"scale(1,1)"});
+				$(".intiNav:nth-child(2)").css({"-webkit-transform":"scale(1,1)"});
+				$(".intiNav:nth-child(3)").css({"-webkit-transform":"scale(1,1)"});
+				$(".intiNav:nth-child(4)").css({"-webkit-transform":"scale(1,1)"});
+				$(".intiNav:nth-child(5)").css({"-webkit-transform":"scale(1,1)"});
+			});
+		</script>
+	<div class="slider">
+		<div id="header" class="destOne"  style="position: absolute;top: 0;left: 0%;width: 100%;height: 60vh;">
+		<div class="leftHeader inline-block" style="z-index: 999;background: url(img/hutan.jpg)bottom;background-size: cover;width: 100%;background-attachment: fixed;">
+			<div class="logoWeb">
+				<a href="index.html">
+					<img src="img/logo.png" width="200px">
+				</a>
+			</div>
+			<div class="headCaption">
+				<div class="darkBg"></div>
+				<div class="borderLeft">
+					<div class="nameTour">
+						DESTINASI
+					</div>
+					<div class="cityOfTour">
+						Temukan destinasi menarik dari seluruh Indonesia
+					</div>
+
+				</div>
+			</div>
+		
+		
+		</div>
+			</div>
+			<script type="text/javascript">
+			$(document).ready(function(){
+				$(".borderLeft").delay(200).animate({"height":"150px"},"slow");
+				$(".nameTour").delay(800).animate({"left":"0px"},"slow");
+				$(".cityOfTour").delay(2200).animate({"left":"0px"},"slow");
+				
+			});
+		</script>	
+		</div>
+			<div style="clear: both;height: 60vh;"></div>
+			<div style="clear: both;"></div>
+			<div class="location-web">
+				<a href="index.html">Beranda</a>
+				 <span class="next-bc"></span> 
+				<font color="#222">Destinasi</font>
+			</div>
+			<img src="img/shadow-4.png" style="width: 100%;">
+
+
+			<div>
+
+				<center>
+					<div class="form-search">
+						<form method="get">
+							<input type="text" name="search" placeholder="Cari Apa Saja">
+							<button style="font-size: 15pt;">Cari</button>
+						</form>
+					</div>
+					<div class="headerDest">
+						<h1>PILIH PULAU TUJUANMU</h1>
+					</div>
+
+					<div class="btnProv">
+						<div class="inline-block sumateraBtn">
+							<a href="javascript:void:(0)">SUMATERA</a>
+						</div>
+						<div class="inline-block jawaBtn">
+							<a href="javascript:void:(0)">JAWA</a>
+						</div>
+						<div class="inline-block nusaTenggaraBtn">
+							<a href="javascript:void:(0)">NUSA TENGGARA</a>
+						</div>
+						<div class="inline-block kalimantanBtn">
+							<a href="javascript:void:(0)">KALIMANTAN</a>
+						</div>
+						<div class="inline-block sulawesiBtn">
+							<a href="javascript:void:(0)">SULAWESI</a>
+						</div>
+						<div class="inline-block malukuBtn">
+							<a href="javascript:void:(0)">MALUKU</a>
+						</div>
+						<div class="inline-block papuaBtn">
+							<a href="javascript:void:(0)">PAPUA</a>
+						</div>
+					</div>
+					<div class="locationDestPulau">
+						<img src="img/indonesia.png" width="80%">
+						
+						<div class="pinLoc sumateraLoc">
+							<img src="img/nav2.png">
+						</div>
+
+						<div class="pinLoc jawaLoc">
+							<img src="img/nav2.png">
+						</div>
+
+						<div class="pinLoc nusaTenggaraLoc">
+							<img src="img/nav2.png">
+						</div>
+
+						<div class="pinLoc kalimantanLoc">
+							<img src="img/nav2.png">
+						</div>
+
+						<div class="pinLoc sulawesiLoc">
+							<img src="img/nav2.png">
+						</div>
+
+						<div class="pinLoc malukuLoc">
+							<img src="img/nav2.png">
+						</div>
+
+						<div class="pinLoc papuaLoc">
+							<img src="img/nav2.png">
+						</div>
+					</div>
+				</center>
+			</div>
+
+			<script type="text/javascript">
+				$(".sumateraBtn a").mouseover(function(){
+					$(".sumateraLoc").slideDown();
+					$(".jawaLoc").slideUp();
+					$(".nusaTenggaraLoc").slideUp();
+					$(".kalimantanLoc").slideUp();
+					$(".sulawesiLoc").slideUp();
+					$(".malukuLoc").slideUp();
+					$(".papuaLoc").slideUp();
+				
+				});
+
+				$(".jawaBtn a").mouseover(function(){
+					$(".sumateraLoc").slideUp();
+					$(".jawaLoc").slideDown();
+					$(".nusaTenggaraLoc").slideUp();
+					$(".kalimantanLoc").slideUp();
+					$(".sulawesiLoc").slideUp();
+					$(".malukuLoc").slideUp();
+					$(".papuaLoc").slideUp();
+				
+				});
+
+				$(".nusaTenggaraBtn a").mouseover(function(){
+					$(".sumateraLoc").slideUp();
+					$(".jawaLoc").slideUp();
+					$(".nusaTenggaraLoc").slideDown();
+					$(".kalimantanLoc").slideUp();
+					$(".sulawesiLoc").slideUp();
+					$(".malukuLoc").slideUp();
+					$(".papuaLoc").slideUp();
+				
+				});
+
+				$(".kalimantanBtn a").mouseover(function(){
+					$(".sumateraLoc").slideUp();
+					$(".jawaLoc").slideUp();
+					$(".nusaTenggaraLoc").slideUp();
+					$(".kalimantanLoc").slideDown();
+					$(".sulawesiLoc").slideUp();
+					$(".malukuLoc").slideUp();
+					$(".papuaLoc").slideUp();
+				
+				});
+
+				$(".sulawesiBtn a").mouseover(function(){
+					$(".sumateraLoc").slideUp();
+					$(".jawaLoc").slideUp();
+					$(".nusaTenggaraLoc").slideUp();
+					$(".kalimantanLoc").slideUp();
+					$(".sulawesiLoc").slideDown();
+					$(".malukuLoc").slideUp();
+					$(".papuaLoc").slideUp();
+				
+				});
+
+				$(".malukuBtn a").mouseover(function(){
+					$(".sumateraLoc").slideUp();
+					$(".jawaLoc").slideUp();
+					$(".nusaTenggaraLoc").slideUp();
+					$(".kalimantanLoc").slideUp();
+					$(".sulawesiLoc").slideUp();
+					$(".malukuLoc").slideDown();
+					$(".papuaLoc").slideUp();
+				
+				});
+
+				$(".papuaBtn a").mouseover(function(){
+					$(".sumateraLoc").slideUp();
+					$(".jawaLoc").slideUp();
+					$(".nusaTenggaraLoc").slideUp();
+					$(".kalimantanLoc").slideUp();
+					$(".sulawesiLoc").slideUp();
+					$(".malukuLoc").slideUp();
+					$(".papuaLoc").slideDown();
+				
+				});
+
+				$(".sumateraBtn a").mouseover(function(){
+					
+					$(".jawaLoc").slideUp();
+					$(".nusaTenggaraLoc").slideUp();
+					$(".kalimantanLoc").slideUp();
+					$(".sulawesiLoc").slideUp();
+					$(".malukuLoc").slideUp();
+					$(".papuaLoc").slideUp();
+				
+				})
+				$(".sumateraBtn a").mouseout(function(){
+					$(".pinLoc").slideDown();
+				});
+
+				$(".nusaTenggaraBtn a").mouseout(function(){
+					$(".pinLoc").slideDown();
+				});
+
+				$(".kalimantanBtn a").mouseout(function(){
+					$(".pinLoc").slideDown();
+				});
+
+				$(".sulawesiBtn a").mouseout(function(){
+					$(".pinLoc").slideDown();
+				});
+
+				$(".malukuBtn a").mouseout(function(){
+					$(".pinLoc").slideDown();
+				});
+
+				$(".papuaBtn a").mouseout(function(){
+					$(".pinLoc").slideDown();
+				});
+
+				$(".jawaBtn a").mouseout(function(){
+					$(".pinLoc").slideDown();
+				});
+			</script>
+				<div class="planeBody">
+					<CENTER>
+						<img src="img/plane.png" style="-webkit-transform:rotate(180deg);width: 100vw;">
+					</CENTER>
+				</div>
+			
+			<script type="text/javascript">
+				$(".sumateraBtn a").click(function() {
+					var path = $("#scrollHide").offset().top;
+				 	 $("html").animate({ scrollTop: path }, 2000);
+				 	 
+				 	 $(".planeBody").animate({"left":"0%"},20);
+				 	 $(".planeBody").animate({"top":"-100%"},800);
+				 	 $(".planeBody").animate({"top":"200%"},1300);
+				 	  $(".planeBody").animate({"left":"-300%"},1500);
+				 	 $(".planeBody").animate({"top":"-300%"});
+				});
+
+				$(".jawaBtn a").click(function() {
+					var path = $("#scrollHideJawa").offset().top;
+				 	 $("html").animate({ scrollTop: path }, 2000);
+				 	 
+				 	 $(".planeBody").animate({"left":"0%"},20);
+				 	 $(".planeBody").animate({"top":"-100%"},800);
+				 	 $(".planeBody").animate({"top":"200%"},1300);
+				 	  $(".planeBody").animate({"left":"-300%"},1500);
+				 	 $(".planeBody").animate({"top":"-300%"});
+				});
+
+				$(".nusaTenggaraBtn a").click(function() {
+					var path = $("#scrollHideNT").offset().top;
+				 	 $("html").animate({ scrollTop: path }, 2000);
+				 	 
+				 	 $(".planeBody").animate({"left":"0%"},20);
+				 	 $(".planeBody").animate({"top":"-100%"},800);
+				 	 $(".planeBody").animate({"top":"200%"},1300);
+				 	  $(".planeBody").animate({"left":"-300%"},1500);
+				 	 $(".planeBody").animate({"top":"-300%"});
+				});
+
+				$(".kalimantanBtn a").click(function() {
+					var path = $("#scrollHideKalimantan").offset().top;
+				 	 $("html").animate({ scrollTop: path }, 2000);
+				 	 
+				 	 $(".planeBody").animate({"left":"0%"},20);
+				 	 $(".planeBody").animate({"top":"-100%"},800);
+				 	 $(".planeBody").animate({"top":"200%"},1300);
+				 	  $(".planeBody").animate({"left":"-300%"},1500);
+				 	 $(".planeBody").animate({"top":"-300%"});
+				});
+
+				$(".sulawesiBtn a").click(function() {
+					var path = $("#scrollHideSulawesi").offset().top;
+				 	 $("html").animate({ scrollTop: path }, 2000);
+				 	 
+				 	 $(".planeBody").animate({"left":"0%"},20);
+				 	 $(".planeBody").animate({"top":"-100%"},800);
+				 	 $(".planeBody").animate({"top":"200%"},1300);
+				 	  $(".planeBody").animate({"left":"-300%"},1500);
+				 	 $(".planeBody").animate({"top":"-300%"});
+				});
+
+				$(".malukuBtn a").click(function() {
+					var path = $("#scrollHideMaluku").offset().top;
+				 	 $("html").animate({ scrollTop: path }, 2000);
+				 	 
+				 	 $(".planeBody").animate({"left":"0%"},20);
+				 	 $(".planeBody").animate({"top":"-100%"},800);
+				 	 $(".planeBody").animate({"top":"200%"},1300);
+				 	  $(".planeBody").animate({"left":"-300%"},1500);
+				 	 $(".planeBody").animate({"top":"-300%"});
+				});
+
+				$(".papuaBtn a").click(function() {
+					var path = $("#scrollHidePapua").offset().top;
+				 	 $("html").animate({ scrollTop: path }, 2000);
+				 	 
+				 	 $(".planeBody").animate({"left":"0%"},20);
+				 	 $(".planeBody").animate({"top":"-100%"},800);
+				 	 $(".planeBody").animate({"top":"200%"},1300);
+				 	  $(".planeBody").animate({"left":"-300%"},1500);
+				 	 $(".planeBody").animate({"top":"-300%"});
+				 	 
+				});
+			</script>
+
+			
+
+
+			<div class="artikelWisata" id="wisatas" style="background: none;">
+				
+				<center>
+					<div id="scrollHide"></div>
+					<div class="headerDest">
+						<h1>SUMATERA</h1>
+					</div>
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/bandaaceh.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/aceh.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Aceh</h2>
+								Banda Aceh
+
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+								
+							
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/medan.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/medan.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Sumatera Utara</h2>
+								Medan
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+						
+					</div>
+
+					
+					<!-- HIde -->
+					<div style="display: none;" class="hideSumatera">
+						<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/padang.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/padang.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Sumatera Barat</h2>
+								Padang
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/riau.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/riau.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Riau</h2>
+								Pekanbaru
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+
+
+
+
+
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/tanjungpinang.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/tanjungpinang.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Kepulauan Riau</h2>
+								Tanjung Pinang
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/jambi.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/jambi.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Jambi</h2>
+								Jambi
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/palembang.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/palembang.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Sumatera Selatan</h2>
+								Palembang
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/pangkalpinang.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/pangkalpinang.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Kepulauan Babel</h2>
+								Pangkal Pinang
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/bengkulu.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/bengkulu.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Bengkulu</h2>
+								Bengkulu
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block sumatrea" id="paket" >
+						<a href="destinasi/lampung.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/bandarlampung.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Lampung</h2>
+								Bandar Lampung
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+
+					</div>
+				</center>
+					
+
+					<center>
+						<div class="more open">
+							
+						</div>
+
+						<div class="close" style="display: none;">
+							
+						</div>
+					</center>
+
+					
+					<script type="text/javascript">
+						$(".open").click(function(){
+							$(".hideSumatera").slideDown();
+							$(".open").hide();
+							$(".close").show();
+						});
+						$(".close").click(function(){
+							$(".hideSumatera").slideUp();
+							$(".open").show();
+							$(".close").hide();
+						});
+						$(".close").click(function() {
+							var path = $("#scrollHide").offset().top;
+						 	 $("html").animate({ scrollTop: path }, "slow");
+						});
+					</script>
+
+
+
+
+
+
+				<CENTER>
+				
+				<br><BR><br>
+				<div id="scrollHideJawa"></div>
+					<div class="headerDest">
+						<h1>JAWA</h1>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/jakarta.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/jakarta.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>DKI Jakarta</h2>
+								Jakarta
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/serang.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/Banten.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Banten</h2>
+								Serang
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<!-- HIDE2 -->
+
+					<div style="display: none;" class="hideJawa">
+						<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/bandung.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/bandung.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Jawa Barat</h2>
+								Bandung
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/semarang.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/semarang.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Jawa Tengah</h2>
+								Semarang
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+				
+				
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/yogyakarta.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/yogyakarta.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>D.I Yogyakarta</h2>
+								Yogyakarta
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/surabaya.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/surabaya.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Jawa Timur</h2>
+								Surabaya
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+				
+				</center>
+					
+
+
+
+
+					<center>
+						<div class="more open2">
+							
+						</div>
+
+						<div class="close2" style="display: none;">
+							
+						</div>
+					</center>
+
+					
+					<script type="text/javascript">
+						$(".open2").click(function(){
+							$(".hideJawa").slideDown();
+							$(".open2").hide();
+							$(".close2").show();
+						});
+						$(".close2").click(function(){
+							$(".hideJawa").slideUp();
+							$(".open2").show();
+							$(".close2").hide();
+						});
+						$(".close2").click(function() {
+							var path = $("#scrollHideJawa").offset().top;
+						 	 $("html").animate({ scrollTop: path }, "slow");
+						});
+					</script>
+
+
+
+			<center>
+				<br><br><br>
+				<div id="scrollHideNT"></div>
+					<div class="headerDest">
+						<h1>KEPULAUAN NUSA TENGGARA</h1>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/bali.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/denpasar.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Bali</h2>
+								Denpasar
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/mataram.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/mataram.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>NTB</h2>
+								Mataram
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div style="display: none" class="hideNT">
+						<div class="mainArtikel inline-block" id="paket" >
+							<a href="destinasi/kupang.html" style="color: black;">
+								<div class="">
+									<img src="img/dest/kupang.jpg">
+								</div>
+								<div class="pengantarArt">
+									<h2>NTT</h2>
+									Kupang
+								</div>
+								<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+							</a>
+						</div>
+						<div class="mainArtikel inline-block" id="pendukung" style="height: 500px;width: 500px;box-shadow: none;background: none;"></div>
+					</div>
+					<center>
+						<div class="more open3">
+							
+						</div>
+
+						<div class="close3" style="display: none;">
+							
+						</div>
+					</center>
+					<script type="text/javascript">
+						$(".open3").click(function(){
+							$(".hideNT").slideDown();
+							$(".open3").hide();
+							$(".close3").show();
+						});
+						$(".close3").click(function(){
+							$(".hideNT").slideUp();
+							$(".open3").show();
+							$(".close3").hide();
+						});
+						$(".close3").click(function() {
+							var path = $("#scrollHideNT").offset().top;
+						 	 $("html").animate({ scrollTop: path }, "slow");
+						});
+					</script>
+
+
+					
+						
+					
+
+
+					<br><BR><BR>
+					<div id="scrollHideKalimantan"></div>
+					<div class="headerDest">
+						<h1>KALIMANTAN</h1>
+					</div>
+
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/pontianak.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/pontianak.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Kalimantan Barat</h2>
+								Pontianak
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/palangkaraya.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/palangkaraya.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Kalimantan Tengah</h2>
+								Palangkaraya
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div style="display: none;" class="hideKalimantan">
+						<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/banjarmasin.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/banjarmasin.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Kalimantan Selatan</h2>
+								Banjarmasin
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/samarinda.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/samarinda.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Kalimantan Timur</h2>
+								Samarinda
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/tanjungselor.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/tanjungselor.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Kalimantan Utara</h2>
+								Tanjung Selor
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+					<div class="mainArtikel inline-block" id="pendukung" style="height: 500px;width: 500px;box-shadow: none;background: none;">
+						
+					</div>
+					</div>
+
+
+					<center>
+						<div class="more open4">
+							
+						</div>
+
+						<div class="close4" style="display: none;">
+							
+						</div>
+					</center>
+
+					
+					<script type="text/javascript">
+						$(".open4").click(function(){
+							$(".hideKalimantan").slideDown();
+							$(".open4").hide();
+							$(".close4").show();
+						});
+						$(".close4").click(function(){
+							$(".hideKalimantan").slideUp();
+							$(".open4").show();
+							$(".close4").hide();
+						});
+						$(".close4").click(function() {
+							var path = $("#scrollHideKalimantan").offset().top;
+						 	 $("html").animate({ scrollTop: path }, "slow");
+						});
+					</script>
+
+
+
+					<br><BR><BR>
+					<div id="scrollHideSulawesi"></div>
+					<div class="headerDest">
+						<h1>SULAWESI</h1>
+					</div>
+
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/manado.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/manado.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Sulawesi Utara</h2>
+								Manado
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/gorontalo.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/gorontalo.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Gorontalo</h2>
+								Gorontalo
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="hideSulawesi" style="display: none;">
+						<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/palu.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/palu.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Sulawesi Tengah</h2>
+								Palu
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/mamuju.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/mamuju.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Sulawesi Barat</h2>
+								Mamuju
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/makassar.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/makassar.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Sulawesi Selatan</h2>
+								Makassar
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/kendari.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/kendari.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Sulawesi Tenggara</h2>
+								Kendari
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+					</div>
+
+
+					<center>
+						<div class="more open5">
+							
+						</div>
+
+						<div class="close5" style="display: none;">
+							
+						</div>
+					</center>
+
+					
+					<script type="text/javascript">
+						$(".open5").click(function(){
+							$(".hideSulawesi").slideDown();
+							$(".open5").hide();
+							$(".close5").show();
+						});
+						$(".close5").click(function(){
+							$(".hideSulawesi").slideUp();
+							$(".open5").show();
+							$(".close5").hide();
+						});
+						$(".close5").click(function() {
+							var path = $("#scrollHideSulawesi").offset().top;
+						 	 $("html").animate({ scrollTop: path }, "slow");
+						});
+					</script>
+
+
+
+
+
+					<br><BR><BR>
+					<div id="scrollHideMaluku"></div>
+					<div class="headerDest">
+						<h1>KEPULAUAN MALUKU</h1>
+					</div>
+
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/ambon.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/ambon.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Maluku</h2>
+								Ambon
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/sofifi.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/sofifi.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Maluku Utara</h2>
+								Sofifi
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+
+
+
+					<br><BR><BR>
+					<div id="scrollHidePapua"></div>
+					<div class="headerDest">
+						<h1>PAPUA</h1>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/manokwari.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/manokwari.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Papua Barat</h2>
+								Manokwari
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+					<div class="mainArtikel inline-block" id="paket" >
+						<a href="destinasi/jayapura.html" style="color: black;">
+							<div class="">
+								<img src="img/dest/jayapura.jpg">
+							</div>
+							<div class="pengantarArt">
+								<h2>Papua</h2>
+								Jayapura
+							</div>
+							<img src="img/star.png" style="width: 200px;height: auto;margin: 10px;"> 
+						</a>
+					</div>
+
+			</center>
+		</div>
+			
+
+			<div class="backTop" style="display: none;">
+					<img src="img/top.png" width="80px" style="-webkit-transform:rotate(-45deg)">
+				</div>
+		<script type="text/javascript">
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() >= 50){
+						$(".backTop").fadeIn();
+					}
+					else{
+						$(".backTop").fadeOut();
+					
+						$(".backTop").css({"bottom":"2%"});
+					}
+				
+			});
+			$(".backTop").click(function(){	
+					$(".backTop").css({"background":"none"});
+					$(".backTop").animate({"bottom":"100%"}, "slow");
+					 $('html').animate({scrollTop : 0}, "slow");
+				});
+		</script>
+
+		<div class="fakta captFauna" style="width: 100%;margin: 0;padding: 10px 0px 10px 0px;">
+					<center>
+						<p  style="font-size: 16pt;">
+							"Indonesia memiliki ekosistem alami yang terawat dengan baik dengan hutan hujan seluas 57% dari luas daerah Indonesia. Indonesia juga memiliki garis pantai terpanjang di dunia berkisar 54, 716 kilometer."
+						</p>
+					</center>
+				</div>
+		<div class="footer">
+		<div style="background: #222;">
+			<center>
+			<div class="footer-box inline-block logo">
+				<h2>Dipersembahkan oleh</h2>
+				<img src="img/logo.png" width="170px">
+			</div>
+			<div class="footer-box inline-block">
+				<h2>Destinasi Populer</h2>
+					<div class="navigation2">
+						<a href="#" id="active2">Pantai Kuta - Bali</a>
+						<a href="#">Borobudur - Jawa Tengah</a>	
+						<a href="#">Raja Ampat - Papua</a>
+						<a href="#">Bunaken - Manado</a>
+						<a href="#">Malioboro - Yogyakarta</a>
+						<a href="#">Taman Safari - Jakarta</a>
+						<div class="clear-both"></div>
+					</div>	
+			</div>
+			<div class="footer-box inline-block">
+				<h2>Kontak Kami</h2>
+					<div class="navigation2">
+						<a href="#" style="background: #3b5999; width: 30%;text-align:center;margin:10px;display: inline-block;">Facebook</a>
+						<a href="#" style="background: #e4405f; width: 30%;text-align:center;margin:10px;display: inline-block;">Instagram</a>	
+						<a href="#" style="background: #cd201f; width: 30%;text-align:center;margin:10px;display: inline-block;">Youtube</a>
+						<a href="#" style="background: #55acee; width: 30%;text-align:center;margin:10px;display: inline-block;">Tweeter</a>
+						<a href="#" style="background: #25D366; width: 30%;text-align:center;margin:10px;display: inline-block;">Whats App</a>
+						<a href="#" style="background: #00c300; width: 30%;text-align:center;margin:10px;display: inline-block;">Line</a>
+						<div class="clear-both"></div>
+					</div>	
+				</div>
+				<div class="footer-box inline-block">
+				<h2>Temukan Kami</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1152418093893!2d110.36383881422094!3d-7.77760367931727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58378e231e21%3A0x34bffdcc5d618a71!2sSMK+Negeri+3+Yogyakarta!5e0!3m2!1sid!2sid!4v1518233891601" width="80%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div style="padding: 10px;">
+					Jl. R.W. Monginsidi No.2A, Jetis, Kota Yogyakarta
+				</div>
+			</div>
+			<div class="clear-both"></div>
+			<div class="batas-footer">
+				
+					Copyright &copy; 2018 All-rights reserved. Credit :  <a href="sumber.html" style="color: red;">click here</a>. Design dan Develop By Alfian - SKAGATA TEAM - SMK N 3 YOGYAKARTA
+				</center>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>
